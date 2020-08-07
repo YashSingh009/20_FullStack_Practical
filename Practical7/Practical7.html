@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: cyan;
+            
+        }
+        #container {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 1200px;
+            border: 1px solid black;
+            margin: 0px auto;
+            padding: 10px;
+            background-color: whitesmoke;
+            height: 2000px;
+        }
+        #Header {
+            height: 70px;
+            color: white;
+            font-size: 40px;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        #Banner {
+            height: 500px;
+            color: white;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .Profile {
+            width: 280px;
+            height: 280px;
+            background-color: rgb(177, 177, 9);
+            float: left;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        #section {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        #section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #main {
+            width: 49%;
+            height: 400px;
+            background-color: grey;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            margin-right: 23.6px;
+        }
+        #right {
+            width: 49%;
+            float: left;
+        }
+
+        #Article1 {
+            height: 130px;
+            margin-bottom: 5px;
+            background-color: rgb(155, 59, 25);
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #Article2 {
+            height: 130px;
+            margin-bottom: 5px;
+            background-color: rgb(155, 59, 25);
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #Article3 {
+            height: 130px;  
+            background-color: rgb(155, 59, 25); 
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .rect {
+            width: 280px;
+            height: 300px;
+            margin: 10px;
+            float: left;
+            background-color: rgb(187, 52, 19);
+        }
+        #Footer {
+            height: 70px;
+            color: white;
+            font-size: 40px;
+            background-color: violet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="Header">Header</div>
+        <div id="Banner">Banner</div>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;text-align: center;">Section-1</h1>
+        <div class="Profile"></div>
+        <div class="Profile"></div>
+        <div class="Profile"></div>
+        <div class="Profile"></div>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;text-align: center;margin-bottom: 10px;">Section-2</h1>
+        <div id="section">
+            <div id="main">Main Content</div>
+            <div id="right">
+                <div id="Article1">Article-1</div>
+                <div id="Article2">Article-2</div>
+                <div id="Article3">Article-3</div>
+            </div>
+        </div>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;text-align: center;">Section-3</h1>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <h1 style="text-align: center;margin-bottom: 10px;">Section-4</h1>
+        <div id="Footer">Footer</div>
+        
+
+    </div>
+</body>
+</html>
