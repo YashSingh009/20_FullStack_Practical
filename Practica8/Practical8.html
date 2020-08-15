@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+         *
+         {
+             margin: 0;
+             padding: 0;
+         }
+        #container {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 1200px;
+            margin: 0px auto;
+            padding: 0px 10px;
+            background-color: lightgray;
+            height: 2580px;
+           border: 1px solid black;
+        }
+        #All {
+            margin-top: 100px;
+            position: relative;
+
+        }
+        #Header {
+            background-color: gray;
+            position: fixed;
+            width: 1200px;
+            z-index: 1;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        ul li {
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+        }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: black;
+            padding: 15px 20px;
+            
+        }
+        ul li a:hover {
+            color: white;
+            background-color: yellow;
+        }
+        #image {
+            margin-bottom: 70px;
+        }
+        #photo {
+            width: 1200px;
+            height: 650px
+        }
+        #first {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        #img1 img {
+            display: block;
+            width: 280px;
+            height: 280px;
+            float: left;
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+        #team {
+            margin-bottom: 400px;
+        }
+        #section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #main {
+            width: 48%;
+            height: 410px;
+            background-color: grey;
+            color: white;
+            float: left;
+            margin-right: 25px;
+            padding: 10px;
+        }
+        #right {
+            width: 48%;
+            float: left;
+        }
+        #Article1 {
+            height: 133.33px;
+            margin-bottom: 13px;
+            background-color: rgb(155, 59, 25);
+            color: white;
+        }
+        #Article2 {
+            height: 133.33px;
+            margin-bottom: 13px;
+            background-color: rgb(155, 59, 25);
+            color: white;
+        }
+        #Article3 {
+            height: 133.33px;  
+            background-color: rgb(155, 59, 25); 
+            color: white;
+        }
+        #aboutus {
+            margin-bottom: 100px;
+        }
+        #div1 {
+            width: 250px;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+            margin: 14px;
+            float: left;
+        }
+        #div2 {
+            width: 250px;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+            margin: 14px;
+            float: left;
+            
+        }
+        #div3 {
+            width: 250px;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+            margin: 14px;
+            float: left;
+           
+        }
+        #div4 {
+            width: 250px;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+            margin: 14px;
+            float: left;
+        }
+        #used img {
+            border-radius: 10px;
+            width: 250px;
+            height: 180px;
+            
+        }
+        #used a {
+            text-decoration: none;
+            display: flex;
+            background-color: blue;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            
+        }
+        #used::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #tech {
+            margin-bottom: 100px;
+        }
+        #Footer {
+            height: 90px;
+            color: white;
+            background-color: violet;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <a name="crest"></a>
+        <div id="Header">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#About">about us</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#tech">technologies</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <div id="All">
+            <div id="image">
+                <img src="../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg" id="photo">
+                      
+            </div>
+            <h1 style="font-size: 55px;color: white;" id="first">Practical-8</h1>
+            <div id="team">
+            <p><a name="team"></a></p> 
+            <h1 style="text-align: center;">Team Member</h1>
+            <div id="img1">
+            <img src="../Images/1.png">
+            <img src="../Images/2.png">
+            <img src="../Images/3.png">
+            <img src="../Images/9.png">
+            </div>
+            </div>
+            <div id="aboutus">
+            <a name="About"></a>
+            <p><h1 style="text-align: center;margin-bottom: 20px;">About Us</h1></p> 
+            <div id="section">
+                <div id="main">
+                    <h1 style="margin-bottom: 5px;">About Projects</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis eum aut qui ratione recusandae mollitia et, aliquam eveniet velit sequi, nostrum explicabo. Quos, iusto reprehenderit molestiae modi sed non, corporis nemo sunt sit repellat sequi illo sint veniam expedita laborum odit maiores ullam. Officiis reprehenderit non alias quia similique cupiditate illo nisi? Animi soluta in laboriosam maiores ea at sint omnis suscipit. Accusantium praesentium commodi possimus voluptatem dolorem harum ab est, vero maxime unde, recusandae eligendi. Ipsum debitis minima necessitatibus assumenda, ex veritatis rerum autem facere iure natus voluptatem enim atque, voluptatum impedit quaerat est, ipsam consequatur laborum tenetur? Vitae quibusdam optio minus quos libero voluptate harum animi ipsa dolore voluptates aspernatur ad tenetur totam, eligendi nisi reprehenderit dolores consequuntur eaque et! Modi accusantium vel, voluptatibus, maiores, corporis adipisci impedit maxime doloremque id veniam minima. Veritatis nisi, modi alias aperiam vel magni tenetur consectetur quos quod tempora ad eveniet, vitae ducimus similique cum iusto. Porro eos accusamus adipisci minus ipsum exercitationem dignissimos autem asperiores culpa accusantium necessitatibus deleniti officia a blanditiis vero, rerum veritatis esse aspernatur dolor laborum repellendus hic unde voluptas sapiente? Nobis id saepe inventore. Vitae suscipit quaerat veritatis iure odit? Sint corrupti sapiente, est officia quidem omnis.
+                    </p>
+                </div>
+                <div id="right">
+                    <div id="Article1" style="position: relative;">
+                        <h1 style="color: black;text-align: center;position: absolute;left: 205px;">Project-1</h1>
+                        <img src="../Images/p2.jpeg" style="height: 133.33px;width: 576px;">
+                    </div>
+                    <div id="Article2" style="position: relative;">
+                        <h1 style="color: black;text-align: center;position: absolute;left: 205px;">Project-2</h1>
+                        <img src="../Images/p1.jpg" style="height: 133.33px;width: 576px;">
+                    </div>
+                    <div id="Article3" style="position: relative;">
+                        <h1 style="color: black;text-align: center;position: absolute;left: 205px;">Project-3</h1>
+                        <img src="../Images/p3.jpg" style="height: 133.33px;width: 576px;">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div id="tech">
+            <a name="tech"></a>
+            <h1 style="text-align: center;">Technologies Used</h1>
+            <div id="used">
+                <div id="div1">
+                    <img src="../Images/html.png">
+                    <h4 style="font-family: Arial, Helvetica, sans-serif;font-weight: 30px;margin-top: 10px;margin-bottom: 10px;text-align: center;">Intoduction to HTML</h4>
+                    <p style="line-height: 1.5rem;margin-top: 1px;text-align: justify;margin-left: 12px;margin-right:12px;font-family:sans-serif;margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni nesciunt ratione exercitationem saepe quas et tempora molestias!</p>
+                    <a href="">Read More</a>
+            
+                </div>
+                <div id="div2">
+                    <img src="../Images/css.png">
+                    <h4 style="font-family: Arial, Helvetica, sans-serif;font-weight: 30px;margin-top: 10px;margin-bottom: 10px;text-align: center;">Intoduction to HTML</h4>
+                    <p style="line-height: 1.5rem;margin-top: 1px;text-align: justify;margin-left: 12px;margin-right:12px;font-family:sans-serif;margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni nesciunt ratione exercitationem saepe quas et tempora molestias!</p>
+                    <a href="" style="background-color: red">Read More</a>
+            
+                </div>
+                <div id="div3">
+                    <img src="../Images/jquery.png">
+                    <h4 style="font-family: Arial, Helvetica, sans-serif;font-weight: 30px;margin-top: 10px;margin-bottom: 10px;text-align: center;">Intoduction to HTML</h4>
+                    <p style="line-height: 1.5rem;margin-top: 1px;text-align: justify;margin-left: 12px;margin-right:12px;font-family:sans-serif;margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni nesciunt ratione exercitationem saepe quas et tempora molestias!</p>
+                    <a href="" style="background-color: red">Read More</a>
+            
+                </div>
+                <div id="div4">
+                    <img src="../Images/bootstrap1.jpeg">
+                    <h4 style="font-family: Arial, Helvetica, sans-serif;font-weight: 30px;margin-top: 10px;margin-bottom: 10px;text-align: center;">Intoduction to HTML</h4>
+                    <p style="line-height: 1.5rem;margin-top: 1px;text-align: justify;margin-left: 12px;margin-right:12px;font-family:sans-serif;margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni nesciunt ratione exercitationem saepe quas et tempora molestias!</p>
+                    <a href="" style="background-color: red;">Read More</a>
+            
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <a name="contact"></a>
+            <h1 style="text-align: center;margin-bottom: 10px;">Contact</h1>
+            <div id="Footer">
+                <p style="color: black;padding: 10px;text-align: center;">Webstite Template for Practical-8 &#169; <a href="https://www.beta-labs.in">Beta-labs</a>
+                 <br>
+                 <br>
+                 <a href="#crest">Back to top</a>    
+                </p>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
