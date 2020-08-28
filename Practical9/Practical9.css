@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: block;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+}
+.hell{
+    float: right;
+}
+.main a{
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.hide-btn , .show-btn{
+    color: white;
+    font-size: 30px;
+    float: right;
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.main a:hover{
+    color: black;
+    transition: all 0.3s;
+
+}
+#nav{
+    display: none;
+}
+@media(max-width: 800px){
+    .show-btn , .hide-btn{
+        display: block;
+
+    } 
+    .hell{
+        position: fixed;
+        background-color: gray;
+        top: 0;
+        right: -100%;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.4s;
+    }
+    .hell a{
+        display: block;
+
+    }
+    #nav:checked ~ .hell{
+        right: 0;
+    }
+}
+
+#banner{
+    margin: 100px 10px 10px 10px;
+}
+.banner {
+    height: 850px;
+    width :100%;
+    background-image: url("../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+    padding: 20px 0 0 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 60px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 801px) and (max-width: 1150px) {
+    .banner {
+        background-image: url("../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        margin: 0 auto 10px auto;
+        font-size: 40px;
+        color: white;
+    }
+    /* .card {
+        float: left;
+        margin: 20px 35px;
+        background-color: white;
+        width: 35%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    } */
+}
+
+@media (max-width: 800px){
+    .banner {
+        background-image: url("../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        margin: 0 auto 10px auto;
+        color: white;
+    }
+    .card {
+        float: left;
+        /* margin: 20px 75px; */
+        background-color: white;
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+
+}
+@media (max-width: 600px){
+    .banner {
+        background-image: url("../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin: 0 auto 10px auto;
+        color: white;
+    }
+}
+
+#section-1{
+    margin: 2% 10px 10px 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section-1 {
+    text-align: center;
+    display: block;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    float: left;
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+    border-radius: 50%;
+}
+@media(max-width: 920px){
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media(max-width: 700px){
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+}
+#section-2{
+    margin: 100px 10px 10px 10px;
+}
+.section-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.left-side {
+    width: 50%;
+    background-color: gray;
+    height: 550px;
+    float: left;
+    font-size: 22px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-side {
+    width: 48%;
+    height: 550px;
+    float: right;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px){
+
+    .section-2 {
+        margin-top: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 100px;
+    }
+
+
+    .left-side {
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: gray;
+        height: 500px;
+        padding: 0;
+        font-size: 30px;
+        color: white;
+        overflow: hidden;
+    }
+
+    .right-side {
+        width: 100%;
+        height: 800px;
+        font-size: 30px;
+        color: black;
+    }
+
+}
+
+.articles {
+    height: 179px;
+    width: 100%;
+    margin-bottom: 8px;
+    float: right;
+    display: flex;
+    font-size: 40px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-3 {
+    display: block;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.section-3::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.rect {
+    float: left;
+    margin: 20px 15px;
+    background-color: white;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rect img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.rect h4 {
+    text-align: center;
+}
+
+.rect p {
+    margin: 10px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.rect a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.rect a:hover {
+    background-color: blue;
+}
+
+.footer {
+    background-color: lightslategray;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.header .icon {
+    display: none;
+}
+@media (min-width: 801px) and (max-width: 1150px) {
+    .section-3 {
+        height: auto;
+        width: 765px;
+        margin: 50px auto;
+        display: block;
+    }
+
+    .section-3::after {
+        display: block;
+        contain: ' ';
+        clear: both;
+    }
+
+    .rect {
+        float: left;
+        margin: 20px 35px;
+        background-color: white;
+        width: 35%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+@media (max-width: 800px){
+    .section-3 {
+        height: auto;
+        width: 365px;
+        margin: 50px auto;
+        display: block;
+    }
+
+    .section-3::after {
+        display: block;
+        contain: ' ';
+        clear: both;
+    }
+
+    .rect {
+        float: left;
+        background-color: white;
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+        margin: 5px;
+        padding: 2px;
+        font-size: 20px;
+    }
+}
