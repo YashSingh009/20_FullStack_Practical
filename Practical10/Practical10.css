@@ -78,10 +78,8 @@ a i{
     padding: 15px 25px;
     border-top: 2px solid rgba(225,255,255,0.1) ;
     border-bottom: 2px solid rgba(225,255,255,0.1) ;
-    position: fixed;
-    bottom: 0;
     color: white;
-    width: 20%;
+    margin-top: 412.5px;
 }
 .show-btn,.hide-btn{
     font-size: 30px;
@@ -106,13 +104,12 @@ a i{
     width: 80%;
     float: right;
 }
+
 @media(max-width:779px){
     #chk:checked ~ .sidebar{
         width: 100%;
     }
-    .social{
-        width: 100%;
-    }
+    
 }
 
 
