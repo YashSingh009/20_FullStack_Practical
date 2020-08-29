@@ -71,6 +71,7 @@ a i{
     border-left: 10px solid rgba(0, 0, 0, 0.87);
 }
 .social{
+    width: 100%;
     font-size: 25px;
     display: flex;
     justify-content: space-evenly;
@@ -79,7 +80,9 @@ a i{
     border-top: 2px solid rgba(225,255,255,0.1) ;
     border-bottom: 2px solid rgba(225,255,255,0.1) ;
     color: white;
-    margin-top: 412.5px;
+    margin-top: 410px;
+    
+    
 }
 .show-btn,.hide-btn{
     font-size: 30px;
@@ -90,7 +93,7 @@ a i{
 .hide-btn{
    opacity:0 ;
 }
-#chk:checked ~.sidebar{
+#chk:checked ~ .sidebar{
     left: 0;
 }
 #chk:checked ~ .show-btn{
@@ -104,12 +107,10 @@ a i{
     width: 80%;
     float: right;
 }
-
 @media(max-width:779px){
     #chk:checked ~ .sidebar{
         width: 100%;
     }
-    
 }
 
 
