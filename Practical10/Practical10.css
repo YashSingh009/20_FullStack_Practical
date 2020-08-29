@@ -71,7 +71,7 @@ a i{
     border-left: 10px solid rgba(0, 0, 0, 0.87);
 }
 .social{
-    width: 100%;
+    width: 20%;
     font-size: 25px;
     display: flex;
     justify-content: space-evenly;
@@ -80,8 +80,9 @@ a i{
     border-top: 2px solid rgba(225,255,255,0.1) ;
     border-bottom: 2px solid rgba(225,255,255,0.1) ;
     color: white;
-    margin-top: 400px;
-    
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
     
 }
 .show-btn,.hide-btn{
@@ -96,6 +97,9 @@ a i{
 #chk:checked ~ .sidebar{
     left: 0;
 }
+#chk:checked ~ .sidebar .social{
+    visibility: visible;
+}
 #chk:checked ~ .show-btn{
     opacity: 0;
 
@@ -109,6 +113,9 @@ a i{
 }
 @media(max-width:779px){
     #chk:checked ~ .sidebar{
+        width: 100%;
+    }
+    .social{
         width: 100%;
     }
 }
