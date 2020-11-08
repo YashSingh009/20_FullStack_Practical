@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#time{
+    font-size: 4rem;
+}
+
+#name{
+    opacity: 0.8;
+}
+h1,h2{
+    font-size: 3rem;
+    margin: 1rem;
+}
